@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="ro">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Contact - Gradina X | Design Peisagistic Premium</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800;900&family=Noto+Sans:wght@700;900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#d2deca",
+                        "surface-bright": "#f1fde8",
+                        "secondary-fixed-dim": "#b6ccb4",
+                        "on-error-container": "#93000a",
+                        "inverse-surface": "#293325",
+                        "on-tertiary-container": "#7b4846",
+                        "primary": "#006e08",
+                        "background": "#f1fde8",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed-variant": "#005304",
+                        "on-primary-fixed": "#002201",
+                        "secondary-container": "#d2e9cf",
+                        "outline-variant": "#baccb1",
+                        "tertiary": "#84504e",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#556955",
+                        "surface-container-low": "#ebf7e3",
+                        "outline": "#6b7c65",
+                        "on-background": "#141e12",
+                        "tertiary-fixed-dim": "#f9b6b2",
+                        "surface-tint": "#006e08",
+                        "inverse-on-surface": "#e9f5e0",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#00e61f",
+                        "surface-variant": "#dae6d2",
+                        "background-dark": "#102212",
+                        "secondary-fixed": "#d2e9cf",
+                        "glass-bg": "rgba(246, 248, 246, 0.8)",
+                        "on-tertiary-fixed": "#340f0f",
+                        "on-surface-variant": "#3c4b37",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#4f634f",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#693937",
+                        "error-container": "#ffdad6",
+                        "border-light": "#e7f3e8",
+                        "on-primary-container": "#006507",
+                        "on-surface": "#141e12",
+                        "on-error": "#ffffff",
+                        "surface": "#f1fde8",
+                        "on-secondary-fixed-variant": "#384b39",
+                        "tertiary-fixed": "#ffdad7",
+                        "on-secondary-fixed": "#0d1f10",
+                        "surface-container-high": "#e0ecd7",
+                        "primary-container": "#13ec25",
+                        "primary-fixed": "#75ff66",
+                        "background-light": "#f6f8f6",
+                        "surface-container": "#e6f2dd",
+                        "inverse-primary": "#00e61f",
+                        "tertiary-container": "#ffbbb7",
+                        "text-dark": "#0d1b0f",
+                        "surface-container-highest": "#dae6d2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-lg": "2.5rem",
+                        "stack-sm": "1rem",
+                        "gutter": "1.5rem",
+                        "container-max": "1280px",
+                        "stack-md": "1.5rem",
+                        "section-padding-y": "6rem"
+                    },
+                    "fontFamily": {
+                        "display-xl-mobile": ["Manrope"],
+                        "label-bold": ["Noto Sans"],
+                        "headline-lg": ["Manrope"],
+                        "body-sm": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "headline-md": ["Manrope"],
+                        "display-xl": ["Manrope"],
+                        "headline-sm": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "label-xs": ["Noto Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        /* ==========================================================================
+           IMAGINE HARTA - MODIFICĂ LINKUL DE MAI JOS PENTRU A ACTUALIZA HARTA TĂU
+           ========================================================================== */
+        :root {
+            --img-contact-map: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBone8L2e9zkr6nsNZzS6uc5SLbwMSmGrMRIhpBH_fIlpDswkDxxxoAVuv12atJfyeXKlsiFKeIIIQGApOzJZSx_0iSnwpSlYduP3C-_ailArdjwXmAlH3mqUcCNBx8pQdpVakYgBn6gN3ku4R5lW6s_uSlDEUva6ruyToXAL4vA1DYEXAoBaOsDLfSaooX1bo_od_fUjSZejbyAsffc-2evw2EEeeX9FnfcSgdhxm6LtyF-lpWPKF8PSQSXM1OGOjOJadEoEP_h-ke');
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(231, 243, 232, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary selection:text-on-primary">
+
+<!-- Navigation -->
+<nav class="fixed top-0 left-0 w-full bg-glass-bg backdrop-blur-md border-b border-outline-variant/30 shadow-sm z-50">
+    <div class="flex justify-between items-center h-20 px-gutter max-w-container-max mx-auto">
+        <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">park</span>
+            <a href="index.html#acasa" class="font-display-xl text-headline-sm font-black text-primary hover:opacity-90 transition-opacity">Gradina X</a>
+        </div>
+        <div class="hidden md:flex items-center gap-8">
+            <a class="text-on-surface-variant hover:text-primary font-headline-sm text-[16px] transition-all duration-300 hover:scale-105 font-body-md" href="index.html#acasa">Acasă</a>
+            <a class="text-on-surface-variant hover:text-primary font-headline-sm text-[16px] transition-all duration-300 hover:scale-105 font-body-md" href="index.html#despre">Despre Noi</a>
+            <a class="text-on-surface-variant hover:text-primary font-headline-sm text-[16px] transition-all duration-300 hover:scale-105 font-body-md" href="servicii.html">Servicii</a>
+            <a class="text-on-surface-variant hover:text-primary font-headline-sm text-[16px] transition-all duration-300 hover:scale-105 font-body-md" href="portofoliu.html">Portofoliu</a>
+            <a class="text-primary font-bold border-b-2 border-primary transition-all duration-300 font-body-md" href="#">Contact</a>
+        </div>
+        <a href="#contactForm" class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-label-bold transition-transform hover:scale-105 active:scale-95 shadow-md inline-block text-center">
+            Solicită Ofertă
+        </a>
+    </div>
+</nav>
+
+<main class="pt-20">
+    <!-- Hero & Contact Info Grid -->
+    <section class="relative py-section-padding-y overflow-hidden">
+        <div class="max-w-container-max mx-auto px-gutter relative z-10">
+            <div class="text-center mb-16">
+                <span class="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full font-label-xs mb-4">SUNTEM AICI PENTRU TINE</span>
+                <h1 class="font-display-xl text-display-xl-mobile md:text-display-xl mb-6">Să discutăm despre <span class="text-primary">visul tău</span></h1>
+                <p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto">Echipa noastră de peisagiști experți este gata să transforme orice spațiu exterior într-o oază de relaxare și frumusețe naturală.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-stack-md">
+                <!-- Contact Details -->
+                <div class="lg:col-span-1 space-y-6">
+                    <div class="glass-card p-8 rounded-2xl group hover:shadow-xl transition-all duration-300 border border-light bg-surface-container-lowest">
+                        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                            <span class="material-symbols-outlined text-primary group-hover:text-on-primary">location_on</span>
+                        </div>
+                        <h3 class="font-headline-sm font-bold text-on-surface mb-2">Sediul Nostru</h3>
+                        <p class="font-body-md text-on-surface-variant">Strada Grădinilor nr. 12, Sector 1, București, România</p>
+                    </div>
+                    
+                    <div class="glass-card p-8 rounded-2xl group hover:shadow-xl transition-all duration-300 border border-light bg-surface-container-lowest">
+                        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                            <span class="material-symbols-outlined text-primary group-hover:text-on-primary">call</span>
+                        </div>
+                        <h3 class="font-headline-sm font-bold text-on-surface mb-2">Telefon</h3>
+                        <p class="font-body-md text-on-surface-variant"><a href="tel:+40700000000" class="hover:underline">+40 700 000 000</a></p>
+                        <p class="font-body-sm text-on-surface-variant/70 mt-1">Luni - Vineri: 09:00 - 18:00</p>
+                    </div>
+                    
+                    <div class="glass-card p-8 rounded-2xl group hover:shadow-xl transition-all duration-300 border border-light bg-surface-container-lowest">
+                        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                            <span class="material-symbols-outlined text-primary group-hover:text-on-primary">mail</span>
+                        </div>
+                        <h3 class="font-headline-sm font-bold text-on-surface mb-2">Email</h3>
+                        <p class="font-body-md text-on-surface-variant"><a href="mailto:contact@gradinax.ro" class="hover:underline">contact@gradinax.ro</a></p>
+                        <p class="font-body-md text-on-surface-variant"><a href="mailto:suport@gradinax.ro" class="hover:underline">suport@gradinax.ro</a></p>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="lg:col-span-2">
+                    <form class="bg-surface-container-lowest p-8 md:p-12 rounded-3xl border border-border-light shadow-sm relative overflow-hidden" id="contactForm">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div class="space-y-2">
+                                <label class="font-label-bold text-on-surface-variant uppercase text-[10px]">Nume Complet</label>
+                                <input class="w-full bg-surface-container px-4 py-3 rounded-xl border-none focus:ring-2 focus:ring-primary transition-all font-body-md" placeholder="Ion Popescu" required type="text"/>
+                            </div>
+                            <div class="space-y-2">
+                                <label class="font-label-bold text-on-surface-variant uppercase text-[10px]">Adresă Email</label>
+                                <input class="w-full bg-surface-container px-4 py-3 rounded-xl border-none focus:ring-2 focus:ring-primary transition-all font-body-md" placeholder="ion.popescu@exemplu.ro" required type="email"/>
+                            </div>
+                            <div class="space-y-2">
+                                <label class="font-label-bold text-on-surface-variant uppercase text-[10px]">Telefon</label>
+                                <input class="w-full bg-surface-container px-4 py-3 rounded-xl border-none focus:ring-2 focus:ring-primary transition-all font-body-md" placeholder="07XX XXX XXX" type="tel"/>
+                            </div>
+                            <div class="space-y-2">
+                                <label class="font-label-bold text-on-surface-variant uppercase text-[10px]">Subiect</label>
+                                <select class="w-full bg-surface-container px-4 py-3 rounded-xl border-none focus:ring-2 focus:ring-primary transition-all font-body-md text-on-surface-variant">
+                                    <option>Amenajare Grădină</option>
+                                    <option>Mentenanță</option>
+                                    <option>Sisteme Irigații</option>
+                                    <option>Altele</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="space-y-2 mb-8">
+                            <label class="font-label-bold text-on-surface-variant uppercase text-[10px]">Mesajul Tău</label>
+                            <textarea class="w-full bg-surface-container px-4 py-3 rounded-xl border-none focus:ring-2 focus:ring-primary transition-all font-body-md" placeholder="Spune-ne mai multe despre proiectul tău..." required rows="4"></textarea>
+                        </div>
+                        <button class="w-full bg-primary text-on-primary py-4 rounded-xl font-headline-sm hover:scale-[1.01] active:scale-95 transition-all shadow-md flex items-center justify-center gap-2" type="submit">
+                            Trimite Mesajul
+                            <span class="material-symbols-outlined">send</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="bg-surface-container-low py-section-padding-y">
+        <div class="max-w-container-max mx-auto px-gutter">
+            <div class="text-center mb-16">
+                <h2 class="font-headline-lg mb-4 text-inverse-surface">De ce să alegi <span class="text-primary">Gradina X</span>?</h2>
+                <p class="font-body-lg text-on-surface-variant">Excelența în peisagistică este semnătura noastră.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-8 bg-surface-container-lowest rounded-3xl border border-border-light shadow-sm">
+                    <div class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <span class="material-symbols-outlined !text-3xl" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+                    </div>
+                    <h3 class="font-headline-sm font-bold text-on-surface mb-3">Experiență Vastă</h3>
+                    <p class="font-body-md text-on-surface-variant">Peste 15 ani de experiență în transformarea spațiilor verzi în proiecte de artă vie.</p>
+                </div>
+                <div class="text-center p-8 bg-surface-container-lowest rounded-3xl border border-border-light shadow-sm">
+                    <div class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <span class="material-symbols-outlined !text-3xl" style="font-variation-settings: 'FILL' 1;">verified</span>
+                    </div>
+                    <h3 class="font-headline-sm font-bold text-on-surface mb-3">Garanție Extinsă</h3>
+                    <p class="font-body-md text-on-surface-variant">Oferim garanție completă pentru toate lucrările executate și pentru plantele furnizate.</p>
+                </div>
+                <div class="text-center p-8 bg-surface-container-lowest rounded-3xl border border-border-light shadow-sm">
+                    <div class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                        <span class="material-symbols-outlined !text-3xl" style="font-variation-settings: 'FILL' 1;">eco</span>
+                    </div>
+                    <h3 class="font-headline-sm font-bold text-on-surface mb-3">Materiale Premium</h3>
+                    <p class="font-body-md text-on-surface-variant">Utilizăm doar materiale sustenabile și specii de plante aclimatizate de cea mai înaltă calitate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="h-[500px] relative w-full overflow-hidden">
+        <div class="absolute inset-0 bg-surface-container-highest flex items-center justify-center px-4">
+            <div class="absolute inset-0 bg-cover bg-center grayscale contrast-75 brightness-90 opacity-40" style="background-image: var(--img-contact-map);"></div>
+            <div class="absolute z-20 bg-surface-container-lowest p-8 rounded-3xl shadow-2xl max-w-sm border border-outline-variant/30 text-center md:text-left">
+                <h3 class="font-headline-sm font-bold text-inverse-surface mb-2">Zona de Acoperire</h3>
+                <p class="font-body-md text-on-surface-variant mb-5">Operăm în București, Ilfov și județele limitrofe. Pentru proiecte de anvergură, ne deplasăm în toată țara.</p>
+                <div class="flex items-center justify-center md:justify-start gap-2 text-primary font-bold">
+                    <span class="material-symbols-outlined">location_on</span>
+                    <span class="font-body-sm">Disponibili în toată România</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-inverse-surface text-surface-variant w-full py-section-padding-y">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-gutter max-w-container-max mx-auto">
+        <div class="space-y-6">
+            <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-surface-bright text-3xl">park</span>
+                <div class="font-headline-md text-headline-md font-extrabold text-surface-bright">Gradina X</div>
+            </div>
+            <p class="font-body-md text-surface-variant/80">Peisagistică profesională pentru sanctuarul tău exterior. Transformăm viziunile în realitate verde.</p>
+            <div class="flex gap-4">
+                <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors duration-200" href="#">
+                    <span class="material-symbols-outlined text-white">face_nod</span>
+                </a>
+                <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors duration-200" href="#">
+                    <span class="material-symbols-outlined text-white">photo_camera</span>
+                </a>
+            </div>
+        </div>
+        <div>
+            <h4 class="text-white font-bold mb-6">Servicii</h4>
+            <ul class="space-y-4">
+                <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block" href="servicii.html#amenajare">Amenajări Grădini</a></li>
+                <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block" href="servicii.html#gazon">Instalare Gazon</a></li>
+                <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block" href="servicii.html#irigatii">Sisteme Irigații</a></li>
+                <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block" href="servicii.html#mentenanta">Întreținere</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="text-white font-bold mb-6">Informații Legale</h4>
+            <ul class="space-y-4">
+                <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block" href="portofoliu.html">Portofoliu Lucrări</a></li>
+                <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block" href="index.html#despre">Despre Noi</a></li>
+                <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block font-bold text-primary-fixed-dim" href="legal.html#termeni">Termeni și Condiții</a></li>
+                <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block" href="legal.html#gdpr">Politică GDPR</a></li>
+                <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block" href="legal.html#cookies">Politică Cookies</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="text-white font-bold mb-6">Contact direct</h4>
+            <ul class="space-y-4 font-body-md">
+                <li class="flex gap-3 items-start">
+                    <span class="material-symbols-outlined text-primary-fixed shrink-0">location_on</span>
+                    <span>București, România</span>
+                </li>
+                <li class="flex gap-3 items-start">
+                    <span class="material-symbols-outlined text-primary-fixed shrink-0">call</span>
+                    <a href="tel:+40 730 395 167" class="hover:underline transition-all duration-200">+40 730 395 167</a>
+                </li>
+                <li class="flex gap-3 items-start">
+                    <span class="material-symbols-outlined text-primary-fixed shrink-0">mail</span>
+                    <a href="mailto:contact@gradinax.ro" class="hover:underline transition-all duration-200">contact@gradinax.ro</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="max-w-container-max mx-auto px-gutter mt-16 pt-8 border-t border-white/10 text-center">
+        <p class="font-body-md text-surface-variant/60">© 2026 Gradina X. Toate drepturile rezervate. Peisagistică profesională pentru sanctuarul tău exterior.</p>
+    </div>
+</footer>
+
+<script>
+    // Logica formularului de contact
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const btn = e.target.querySelector('button');
+        const originalContent = btn.innerHTML;
+        
+        btn.disabled = true;
+        btn.innerHTML = `<span class="material-symbols-outlined animate-spin">progress_activity</span> Se trimite...`;
+        
+        setTimeout(() => {
+            btn.style.backgroundColor = "#84504e"; // Schimbare temporară pe tonul tertiary
+            btn.innerHTML = `<span class="material-symbols-outlined">check_circle</span> Mesaj Trimis!`;
+            e.target.reset();
+            
+            setTimeout(() => {
+                btn.disabled = false;
+                btn.style.backgroundColor = ""; // Revine la stilul Tailwind nativ
+                btn.innerHTML = originalContent;
+            }, 3000);
+        }, 1500);
+    });
+
+    // Scroll reveal discret pentru elementele de tip card
+    const observerOptions = { threshold: 0.1 };
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.glass-card, form, .text-center > div').forEach(card => {
+        card.style.opacity = "0";
+        card.style.transform = "translateY(20px)";
+        card.style.transition = "all 0.6s ease-out";
+        observer.observe(card);
+    });
+</script>
+</body>
+</html>

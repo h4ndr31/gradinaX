@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="ro">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Portofoliu | Gradina X - Peisagistică Profesională</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800;900&family=Noto+Sans:wght@700;900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#d2deca",
+                        "surface-bright": "#f1fde8",
+                        "secondary-fixed-dim": "#b6ccb4",
+                        "on-error-container": "#93000a",
+                        "inverse-surface": "#293325",
+                        "on-tertiary-container": "#7b4846",
+                        "primary": "#006e08",
+                        "background": "#f1fde8",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed-variant": "#005304",
+                        "on-primary-fixed": "#002201",
+                        "secondary-container": "#d2e9cf",
+                        "outline-variant": "#baccb1",
+                        "tertiary": "#84504e",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#556955",
+                        "surface-container-low": "#ebf7e3",
+                        "outline": "#6b7c65",
+                        "on-background": "#141e12",
+                        "tertiary-fixed-dim": "#f9b6b2",
+                        "surface-tint": "#006e08",
+                        "inverse-on-surface": "#e9f5e0",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#00e61f",
+                        "surface-variant": "#dae6d2",
+                        "background-dark": "#102212",
+                        "secondary-fixed": "#d2e9cf",
+                        "glass-bg": "rgba(246, 248, 246, 0.8)",
+                        "on-tertiary-fixed": "#340f0f",
+                        "on-surface-variant": "#3c4b37",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#4f634f",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#693937",
+                        "error-container": "#ffdad6",
+                        "border-light": "#e7f3e8",
+                        "on-primary-container": "#006507",
+                        "on-surface": "#141e12",
+                        "on-error": "#ffffff",
+                        "surface": "#f1fde8",
+                        "on-secondary-fixed-variant": "#384b39",
+                        "tertiary-fixed": "#ffdad7",
+                        "on-secondary-fixed": "#0d1f10",
+                        "surface-container-high": "#e0ecd7",
+                        "primary-container": "#13ec25",
+                        "primary-fixed": "#75ff66",
+                        "background-light": "#f6f8f6",
+                        "surface-container": "#e6f2dd",
+                        "inverse-primary": "#00e61f",
+                        "tertiary-container": "#ffbbb7",
+                        "text-dark": "#0d1b0f",
+                        "surface-container-highest": "#dae6d2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-lg": "2.5rem",
+                        "stack-sm": "1rem",
+                        "gutter": "1.5rem",
+                        "container-max": "1280px",
+                        "stack-md": "1.5rem",
+                        "section-padding-y": "6rem"
+                    },
+                    "fontFamily": {
+                        "display-xl-mobile": ["Manrope"],
+                        "label-bold": ["Noto Sans"],
+                        "headline-lg": ["Manrope"],
+                        "body-sm": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "headline-md": ["Manrope"],
+                        "display-xl": ["Manrope"],
+                        "headline-sm": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "label-xs": ["Noto Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        /* ==========================================================================
+           IMAGINI PORTOFOLIU - SCHIMBĂ LINKURILE DE MAI JOS CU POZELE TALE (ex: 'lucrare1.jpg')
+           ========================================================================== */
+        :root {
+            --img-proiect-1: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDg_fiwQjISaBQagctWpfiT4HKBgmH1yHhib8AdKajso8_ULVqFfqV5tnbkdG-VoB3Ek4MjSyxGCU0tD_TyprQGOj-9oUrShOg-gIG_twY_-a-Ztlpxd9JFSp3TX6fxHP01mOz01f3u4G3gh2F30uj99CukZYoiK35l-mq85A_A-MhGwBIM9FJU0Phj6iAkjXL7YGygMNiIJBcBJndxSIqVmO0X8S5c3uuJBnaTUGHqqgwjMwanZFwn3ibNMntqdreKVqgslySRboBv'); /* Rezidențial Pipera */
+            --img-proiect-2: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC66GgyixFiFFQzUYiI59E2uDaf7D7h5jmxeJYq-14baeP55fYLYW4yfmaYtDHaZIHSxPXJN5xtTrpawJ6jLshwvMteb0lquPi00CNZkEfQ7BS56R9sHhEcQ3Ioj9QIzV_YuhWNjlqxO0H66GzBuQcFOcQrorG3ACM0_ScQgAgfVIJjdBVHXNMLyPv8Ih22NM5xf6axSQ8YerMaWsasahHG3jXFKdDMFhxB2NfZBex7O1Y8VoyEtvqAUSBTV6iIgK3Z-oU9sh4INX1u'); /* Familie Snagov */
+            --img-proiect-3: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB6_ZGnzcRXrGosoXr7bA5v6GO4wEkGoBgt3aqoY0exsWxLw70b-wSRr4Q-rJbJcgyAS-O9_zsI11QXMeKF6ZdWz3qsvhEDaWG8vnQ1X_z-u5mwuteMlnPzKESmDQYSKxXIu3ndvaEUS-LTnkhUOJ0S6-rCypjlqBkRE9LTvZitAGoJ8YBIE0Z6FYDcFOCxy0xnmTVP6B-8i33ASBUu3cOIkoY7BTQ_YcdRuD2x4jfYSX5_KkY8tbJchracB6UEvm5Phvc8it8yFdeA'); /* Terasă Mediteraneeană */
+            --img-proiect-4: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAW0x2SGhQ5QX1VfwvAwzjMu2kEtkv6UAJRH6mrRNi6VZHgWelw_o8JNuPd9US53lCw5ArV95NDXUHTZ0V83ujx-zemwylRtCzxrVlP0a24ba7YYgaR6mvKLoah1OicM7Sub0vE3Ra-_BEu_Jkv96t8UpKY48-MaY4l8zY8O0eiHYFjH5LuxfWd36oK8UB81O9NPnLzHZfZXkKMS01aladruKct7M0_fjyk2D6ZweOJOBmkfwytWfoCcfaxltm_BqKk-XAqKDW7PwOy'); /* Grădină Minimalistă */
+            --img-proiect-5: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCe8UfKna-aLiBtfiM7aQFFb6xNXzvxFyMGltdNdaz-iWWRW7Q27TajRiicKjg0NRIcm_FP2bQIxVcOWv0Lski0eVi4OKSt7Hmdvlp1mNamBULNX9Mf01ZY3K1QlT_IPuF1slTtOGLoJVvV8j_xyDKIETZ16pwm4OPlWGsg7JHTQVxQ3O658k3Pa6ECXryNIM6QStwBnH_jttjo3XQjkpe2b8E3zp4ymmFCvCQmtLNvU27PgOj7kxPS60BaxOk1SPftk3E1z7Riswng'); /* Spațiu Comercial Corporate */
+            --img-proiect-6: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDATyow9qM11XYKlXUY5Lhb4jGgdaKPwUoK5wBnoUprgsMuXGdcD4FnWFx2kMRCGb7x06w6dNZ7_b50D68OPS5-bObf9iVl36EhgZfwCdIeOf8TGWHs04PVSEvUwG3BuUVt2Y_ENOAA7IUTsEClGF9-pkxgA0M38C9h7iN3WcclcalAl_dIVvdzwgw5iRb5j41LSVKxiqeQ80CYREWFGEGvrUWpdWicBDIAg4gu0_KDFTafzI2148rnpdkOlmLUMEeHFX22gy3CAgQz'); /* Sisteme de Irigații și Gazon */
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        .project-card-gradient {
+            background: linear-gradient(to top, rgba(20, 30, 18, 0.9) 0%, rgba(20, 30, 18, 0.3) 50%, transparent 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary selection:text-on-primary pt-20">
+
+<nav class="fixed top-0 left-0 w-full z-50 bg-glass-bg backdrop-blur-md border-b border-outline-variant/30 shadow-sm">
+    <div class="flex justify-between items-center h-20 px-gutter max-w-container-max mx-auto">
+        <a href="index.html#acasa" class="font-display-xl text-headline-sm font-black text-primary hover:opacity-90 transition-opacity">Gradina X</a>
+        <div class="hidden md:flex gap-8 items-center">
+            <a class="text-on-surface-variant hover:text-primary font-headline-sm text-[16px] transition-all duration-300 hover:scale-105" href="index.html#acasa">Acasă</a>
+            <a class="text-on-surface-variant hover:text-primary font-headline-sm text-[16px] transition-all duration-300 hover:scale-105" href="index.html#despre">Despre Noi</a>
+            <a class="text-on-surface-variant hover:text-primary font-headline-sm text-[16px] transition-all duration-300 hover:scale-105" href="index.html#servicii">Servicii</a>
+            <a class="text-primary font-bold border-b-2 border-primary font-headline-sm text-[16px] transition-all duration-300" href="#">Portofoliu</a>
+            <a class="text-on-surface-variant hover:text-primary font-headline-sm text-[16px] transition-all duration-300 hover:scale-105" href="index.html#contact">Contact</a>
+        </div>
+        <a href="index.html#contact" class="bg-primary text-on-primary px-6 py-3 rounded-full font-label-bold transition-all duration-300 hover:scale-105 active:scale-95 shadow-md inline-block text-center">
+            Solicită Ofertă
+        </a>
+    </div>
+</nav>
+
+<header class="bg-surface-container-high py-16 border-b border-outline-variant/20">
+    <div class="max-w-container-max mx-auto px-gutter text-center md:text-left">
+        <span class="text-primary font-label-bold uppercase tracking-widest text-sm">Proiectele Noastre</span>
+        <h1 class="font-display-xl text-[36px] md:text-[48px] font-black text-inverse-surface mt-2">Galerie Portofoliu</h1>
+        <p class="font-body-lg text-on-surface-variant mt-4 max-w-2xl">Explorează o selecție din cele mai spectaculoase amenajări exterioare realizate de echipa Gradina X. Fiecare proiect reflectă atenția noastră la detalii și pasiunea pentru natură.</p>
+    </div>
+</header>
+
+<section class="py-16 bg-surface-container-lowest">
+    <div class="max-w-container-max mx-auto px-gutter">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="group relative rounded-[2rem] overflow-hidden aspect-[4/5] shadow-lg bg-cover bg-center" style="background-image: var(--img-proiect-1)">
+                <div class="absolute inset-0 project-card-gradient opacity-80 group-hover:opacity-95 transition-opacity duration-300"></div>
+                <div class="absolute bottom-0 left-0 p-8 w-full transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                    <span class="text-primary-fixed bg-primary/30 px-3 py-1 rounded-full text-xs font-label-bold uppercase tracking-wider mb-2 inline-block">Rezidențial</span>
+                    <h3 class="text-white font-headline-sm text-[22px] mb-1">Vila Modernă Pipera</h3>
+                    <p class="text-white/70 text-sm">Design minimalist adaptat cu elemente geometrice de apă și jardiniere elegante.</p>
+                </div>
+            </div>
+
+            <div class="group relative rounded-[2rem] overflow-hidden aspect-[4/5] shadow-lg bg-cover bg-center" style="background-image: var(--img-proiect-2)">
+                <div class="absolute inset-0 project-card-gradient opacity-80 group-hover:opacity-95 transition-opacity duration-300"></div>
+                <div class="absolute bottom-0 left-0 p-8 w-full transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                    <span class="text-primary-fixed bg-primary/30 px-3 py-1 rounded-full text-xs font-label-bold uppercase tracking-wider mb-2 inline-block">Grădini de Familie</span>
+                    <h3 class="text-white font-headline-sm text-[22px] mb-1">Grădină Rezidențială Snagov</h3>
+                    <p class="text-white/70 text-sm">Spațiu extins cu pergole din lemn, alei din piatră naturală și zone de recreere.</p>
+                </div>
+            </div>
+
+            <div class="group relative rounded-[2rem] overflow-hidden aspect-[4/5] shadow-lg bg-cover bg-center" style="background-image: var(--img-proiect-3)">
+                <div class="absolute inset-0 project-card-gradient opacity-80 group-hover:opacity-95 transition-opacity duration-300"></div>
+                <div class="absolute bottom-0 left-0 p-8 w-full transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                    <span class="text-primary-fixed bg-primary/30 px-3 py-1 rounded-full text-xs font-label-bold uppercase tracking-wider mb-2 inline-block">Terase de Lux</span>
+                    <h3 class="text-white font-headline-sm text-[22px] mb-1">Terasă Mediteraneeană</h3>
+                    <p class="text-white/70 text-sm">Grădină urbană senzorială cu plante aromatice rezistente, lavandă și măslini decorativi.</p>
+                </div>
+            </div>
+
+            <div class="group relative rounded-[2rem] overflow-hidden aspect-[4/5] shadow-lg bg-cover bg-center" style="background-image: var(--img-proiect-4)">
+                <div class="absolute inset-0 project-card-gradient opacity-80 group-hover:opacity-95 transition-opacity duration-300"></div>
+                <div class="absolute bottom-0 left-0 p-8 w-full transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                    <span class="text-primary-fixed bg-primary/30 px-3 py-1 rounded-full text-xs font-label-bold uppercase tracking-wider mb-2 inline-block">Design Modern</span>
+                    <h3 class="text-white font-headline-sm text-[22px] mb-1">Sanctuar Zen Urban</h3>
+                    <p class="text-white/70 text-sm">Linii drepte, gazon impecabil și iluminat nocturn inteligent integrat arhitectural.</p>
+                </div>
+            </div>
+
+            <div class="group relative rounded-[2rem] overflow-hidden aspect-[4/5] shadow-lg bg-cover bg-center" style="background-image: var(--img-proiect-5)">
+                <div class="absolute inset-0 project-card-gradient opacity-80 group-hover:opacity-95 transition-opacity duration-300"></div>
+                <div class="absolute bottom-0 left-0 p-8 w-full transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                    <span class="text-primary-fixed bg-primary/30 px-3 py-1 rounded-full text-xs font-label-bold uppercase tracking-wider mb-2 inline-block">Corporate / Comercial</span>
+                    <h3 class="text-white font-headline-sm text-[22px] mb-1">Sediu Clădire Birouri</h3>
+                    <p class="text-white/70 text-sm">Amenajare spațiu verde exterior pentru relaxarea angajaților cu plante perene ușor de întreținut.</p>
+                </div>
+            </div>
+
+            <div class="group relative rounded-[2rem] overflow-hidden aspect-[4/5] shadow-lg bg-cover bg-center" style="background-image: var(--img-proiect-6)">
+                <div class="absolute inset-0 project-card-gradient opacity-80 group-hover:opacity-95 transition-opacity duration-300"></div>
+                <div class="absolute bottom-0 left-0 p-8 w-full transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                    <span class="text-primary-fixed bg-primary/30 px-3 py-1 rounded-full text-xs font-label-bold uppercase tracking-wider mb-2 inline-block">Tehnic & Sisteme</span>
+                    <h3 class="text-white font-headline-sm text-[22px] mb-1">Gazonare și Irigații Automate</h3>
+                    <p class="text-white/70 text-sm">Montaj rulou gazon premium completat cu un sistem de irigație programabil prin Wi-Fi.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="py-12 bg-background">
+    <div class="max-w-container-max mx-auto px-gutter text-center">
+        <h2 class="font-headline-lg text-primary mb-4">Vrei o transformare similară pentru curtea ta?</h2>
+        <p class="font-body-md text-on-surface-variant max-w-xl mx-auto mb-8">Echipa noastră oferă servicii de consultanță și proiectare 3D pentru ca tu să îți poți vizualiza spațiul înainte de execuție.</p>
+        <a href="index.html#contact" class="bg-primary text-on-primary px-8 py-4 rounded-full font-headline-sm transition-all duration-300 hover:scale-105 inline-flex items-center gap-2 shadow-lg">
+            Solicită o Propunere de Design
+            <span class="material-symbols-outlined">edit_calendar</span>
+        </a>
+    </div>
+</section>
+
+<footer class="bg-inverse-surface text-surface-variant w-full py-section-padding-y">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-gutter max-w-container-max mx-auto">
+        <div class="space-y-6">
+            <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-surface-bright text-3xl">park</span>
+                <div class="font-headline-md text-headline-md font-extrabold text-surface-bright">Gradina X</div>
+            </div>
+            <p class="font-body-md text-surface-variant/80">Peisagistică profesională pentru sanctuarul tău exterior. Transformăm viziunile în realitate verde.</p>
+            <div class="flex gap-4">
+                <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors duration-200" href="#">
+                    <span class="material-symbols-outlined text-white">face_nod</span>
+                </a>
+                <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors duration-200" href="#">
+                    <span class="material-symbols-outlined text-white">photo_camera</span>
+                </a>
+            </div>
+        </div>
+        <div>
+            <h4 class="text-white font-bold mb-6">Servicii</h4>
+            <ul class="space-y-4">
+                <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block" href="servicii.html#amenajare">Amenajări Grădini</a></li>
+                <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block" href="servicii.html#gazon">Instalare Gazon</a></li>
+                <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block" href="servicii.html#irigatii">Sisteme Irigații</a></li>
+                <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block" href="servicii.html#mentenanta">Întreținere</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="text-white font-bold mb-6">Informații Legale</h4>
+            <ul class="space-y-4">
+                <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block" href="portofoliu.html">Portofoliu Lucrări</a></li>
+                <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block" href="index.html#despre">Despre Noi</a></li>
+                <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block font-bold text-primary-fixed-dim" href="legal.html#termeni">Termeni și Condiții</a></li>
+                <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block" href="legal.html#gdpr">Politică GDPR</a></li>
+                <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block" href="legal.html#cookies">Politică Cookies</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="text-white font-bold mb-6">Contact direct</h4>
+            <ul class="space-y-4 font-body-md">
+                <li class="flex gap-3 items-start">
+                    <span class="material-symbols-outlined text-primary-fixed shrink-0">location_on</span>
+                    <span>București, România</span>
+                </li>
+                <li class="flex gap-3 items-start">
+                    <span class="material-symbols-outlined text-primary-fixed shrink-0">call</span>
+                    <a href="tel:+40 730 395 167" class="hover:underline transition-all duration-200">+40 730 395 167</a>
+                </li>
+                <li class="flex gap-3 items-start">
+                    <span class="material-symbols-outlined text-primary-fixed shrink-0">mail</span>
+                    <a href="mailto:contact@gradinax.ro" class="hover:underline transition-all duration-200">contact@gradinax.ro</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="max-w-container-max mx-auto px-gutter mt-16 pt-8 border-t border-white/10 text-center">
+        <p class="font-body-md text-surface-variant/60">© 2026 Gradina X. Toate drepturile rezervate. Peisagistică profesională pentru sanctuarul tău exterior.</p>
+    </div>
+</footer>
+
+<script>
+    // Efect fluid de scroll pentru elementele paginii
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -30px 0px"
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('opacity-100', 'translate-y-0');
+                entry.target.classList.remove('opacity-0', 'translate-y-10');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.grid > div').forEach(el => {
+        el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+        observer.observe(el);
+    });
+</script>
+</body>
+</html>

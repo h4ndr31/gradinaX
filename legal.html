@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="ro">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Informații Legale | Gradina X - Peisagistică Profesională</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800;900&family=Noto+Sans:wght@700;900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#d2deca",
+                        "surface-bright": "#f1fde8",
+                        "secondary-fixed-dim": "#b6ccb4",
+                        "on-error-container": "#93000a",
+                        "inverse-surface": "#293325",
+                        "on-tertiary-container": "#7b4846",
+                        "primary": "#006e08",
+                        "background": "#f1fde8",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed-variant": "#005304",
+                        "on-primary-fixed": "#002201",
+                        "secondary-container": "#d2e9cf",
+                        "outline-variant": "#baccb1",
+                        "tertiary": "#84504e",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#556955",
+                        "surface-container-low": "#ebf7e3",
+                        "outline": "#6b7c65",
+                        "on-background": "#141e12",
+                        "tertiary-fixed-dim": "#f9b6b2",
+                        "surface-tint": "#006e08",
+                        "inverse-on-surface": "#e9f5e0",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#00e61f",
+                        "surface-variant": "#dae6d2",
+                        "background-dark": "#102212",
+                        "secondary-fixed": "#d2e9cf",
+                        "glass-bg": "rgba(246, 248, 246, 0.8)",
+                        "on-tertiary-fixed": "#340f0f",
+                        "on-surface-variant": "#3c4b37",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#4f634f",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#693937",
+                        "error-container": "#ffdad6",
+                        "border-light": "#e7f3e8",
+                        "on-primary-container": "#006507",
+                        "on-surface": "#141e12",
+                        "on-error": "#ffffff",
+                        "surface": "#f1fde8",
+                        "on-secondary-fixed-variant": "#384b39",
+                        "tertiary-fixed": "#ffdad7",
+                        "on-secondary-fixed": "#0d1f10",
+                        "surface-container-high": "#e0ecd7",
+                        "primary-container": "#13ec25",
+                        "primary-fixed": "#75ff66",
+                        "background-light": "#f6f8f6",
+                        "surface-container": "#e6f2dd",
+                        "inverse-primary": "#00e61f",
+                        "tertiary-container": "#ffbbb7",
+                        "text-dark": "#0d1b0f",
+                        "surface-container-highest": "#dae6d2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-lg": "2.5rem",
+                        "stack-sm": "1rem",
+                        "gutter": "1.5rem",
+                        "container-max": "1280px",
+                        "stack-md": "1.5rem",
+                        "section-padding-y": "6rem"
+                    },
+                    "fontFamily": {
+                        "display-xl-mobile": ["Manrope"],
+                        "label-bold": ["Noto Sans"],
+                        "headline-lg": ["Manrope"],
+                        "body-sm": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "headline-md": ["Manrope"],
+                        "display-xl": ["Manrope"],
+                        "headline-sm": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "label-xs": ["Noto Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        /* ==========================================================================
+           CONFIGURĂRI POZE SAU EMBLEME GRAFICE (Dacă este necesar ulterior)
+           ========================================================================== */
+        :root {
+            --img-legal-placeholder: none;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(231, 243, 232, 0.8);
+            transition: all 0.3s ease;
+        }
+        .legal-content p {
+            margin-bottom: 1.5rem;
+            color: #3c4b37;
+            line-height: 1.6;
+        }
+        .legal-content h3 {
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: #006e08;
+            font-weight: 700;
+        }
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+        details[open] .expand-icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary selection:text-on-primary">
+
+<!-- Navigation -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-glass-bg backdrop-blur-md border-b border-outline-variant/30 shadow-sm">
+    <div class="flex justify-between items-center h-20 px-gutter max-w-container-max mx-auto">
+        <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">park</span>
+            <a href="index.html#acasa" class="font-display-xl text-headline-sm font-black text-primary hover:opacity-90 transition-opacity">Gradina X</a>
+        </div>
+        <div class="hidden md:flex gap-8 items-center">
+            <a class="text-on-surface-variant hover:text-primary font-headline-sm text-[16px] transition-all duration-300 hover:scale-105" href="index.html#acasa">Acasă</a>
+            <a class="text-on-surface-variant hover:text-primary font-headline-sm text-[16px] transition-all duration-300 hover:scale-105" href="index.html#despre">Despre Noi</a>
+            <a class="text-on-surface-variant hover:text-primary font-headline-sm text-[16px] transition-all duration-300 hover:scale-105" href="servicii.html">Servicii</a>
+            <a class="text-on-surface-variant hover:text-primary font-headline-sm text-[16px] transition-all duration-300 hover:scale-105" href="portofoliu.html">Portofoliu</a>
+            <a class="text-on-surface-variant hover:text-primary font-headline-sm text-[16px] transition-all duration-300 hover:scale-105" href="index.html#contact">Contact</a>
+        </div>
+        <a href="index.html#contact" class="bg-primary text-on-primary px-6 py-3 rounded-full font-label-bold transition-all duration-300 hover:scale-105 active:scale-95 shadow-md inline-block text-center">
+            Solicită Ofertă
+        </a>
+    </div>
+</nav>
+
+<!-- Main Container -->
+<main class="pt-32 pb-section-padding-y px-gutter max-w-container-max mx-auto">
+    <!-- Header Hero Section -->
+    <div class="mb-16 text-center md:text-left">
+        <span class="text-label-xs font-black tracking-widest text-primary mb-4 block uppercase">Transparență & Încredere</span>
+        <h1 class="font-display-xl text-display-xl-mobile md:text-display-xl text-on-background mb-6">Centru Legal</h1>
+        <p class="font-body-lg text-on-surface-variant max-w-2xl">
+            Aici puteți găsi toate informațiile relevante privind protecția datelor cu caracter personal, utilizarea modulelor cookie și termenii comerciali ai Gradina X.
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <!-- Sticky Sidebar Navigation (Desktop) -->
+        <aside class="hidden lg:block lg:col-span-3">
+            <div class="sticky top-28 space-y-2">
+                <a class="flex items-center gap-3 px-4 py-3 rounded-lg bg-primary-container text-on-primary-container font-bold transition-all" href="#termeni">
+                    <span class="material-symbols-outlined text-xl">description</span>
+                    Termeni și Condiții
+                </a>
+                <a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-low transition-all" href="#gdpr">
+                    <span class="material-symbols-outlined text-xl">security</span>
+                    Politica GDPR
+                </a>
+                <a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-low transition-all" href="#cookies">
+                    <span class="material-symbols-outlined text-xl">cookie</span>
+                    Politica de Cookies
+                </a>
+                <a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-low transition-all" href="#linkuri-utile">
+                    <span class="material-symbols-outlined text-xl">link</span>
+                    Link-uri Utile
+                </a>
+            </div>
+        </aside>
+
+        <!-- Content Area -->
+        <div class="lg:col-span-9 space-y-12">
+            <!-- Terms and Conditions Accordion -->
+            <section class="glass-card rounded-[2rem] p-8 shadow-sm" id="termeni">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+                        <span class="material-symbols-outlined text-2xl">gavel</span>
+                    </div>
+                    <h2 class="font-headline-md text-on-background text-[28px]">Termeni și Condiții</h2>
+                </div>
+                <div class="space-y-4">
+                    <details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/30 overflow-hidden" open>
+                        <summary class="flex justify-between items-center p-6 cursor-pointer list-none select-none">
+                            <span class="font-headline-sm text-on-surface font-bold">1. Definiții și Dispoziții Generale</span>
+                            <span class="material-symbols-outlined expand-icon transition-transform duration-300">expand_more</span>
+                        </summary>
+                        <div class="px-6 pb-6 legal-content border-t border-outline-variant/10 pt-4">
+                            <p>Prezenții Termeni și Condiții guvernează utilizarea website-ului Gradina X și a serviciilor de peisagistică oferite. Prin accesarea acestui site, sunteți de acord cu aceste reguli.</p>
+                            <p>„Utilizator” reprezintă orice persoană fizică sau juridică ce accesează platforma. „Prestator” reprezintă Gradina X (S.C. GRADINA X DESIGN S.R.L.).</p>
+                        </div>
+                    </details>
+                    <details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/30 overflow-hidden">
+                        <summary class="flex justify-between items-center p-6 cursor-pointer list-none select-none">
+                            <span class="font-headline-sm text-on-surface font-bold">2. Proprietate Intelectuală</span>
+                            <span class="material-symbols-outlined expand-icon transition-transform duration-300">expand_more</span>
+                        </summary>
+                        <div class="px-6 pb-6 legal-content border-t border-outline-variant/10 pt-4">
+                            <p>Întregul conținut al acestui site (imagini, texte, elemente de design, logouri) este proprietatea exclusivă a Gradina X și este protejat de legislația națională și internațională privind drepturile de autor.</p>
+                            <p>Este cu desăvârșire interzisă copierea, reproducerea sau utilizarea elementelor grafice sau textuale fără un acord scris prealabil din partea noastră.</p>
+                        </div>
+                    </details>
+                    <details class="group bg-surface-container-lowest rounded-2xl border border-outline-variant/30 overflow-hidden">
+                        <summary class="flex justify-between items-center p-6 cursor-pointer list-none select-none">
+                            <span class="font-headline-sm text-on-surface font-bold">3. Servicii și Garanții</span>
+                            <span class="material-symbols-outlined expand-icon transition-transform duration-300">expand_more</span>
+                        </summary>
+                        <div class="px-6 pb-6 legal-content border-t border-outline-variant/10 pt-4">
+                            <p>Gradina X se angajează să ofere servicii tehnice și horticole de cea mai înaltă calitate. Specificațiile pentru proiectele de irigații sau instalare gazon sunt detaliate în contractele individuale de prestări servicii.</p>
+                            <p>Garanția acordată pentru materialul botanic (plante vii) este strict condiționată de respectarea planului de întreținere și udare recomandat de specialiștii noștri.</p>
+                        </div>
+                    </details>
+                </div>
+            </section>
+
+            <!-- GDPR Section -->
+            <section class="glass-card rounded-[2rem] p-8 shadow-sm" id="gdpr">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+                        <span class="material-symbols-outlined text-2xl">privacy_tip</span>
+                    </div>
+                    <h2 class="font-headline-md text-on-background text-[28px]">Politica GDPR</h2>
+                </div>
+                <div class="legal-content">
+                    <p class="font-body-md">Protecția datelor dumneavoastră cu caracter personal reprezintă o prioritate absolută pentru noi. În conformitate cu Regulamentul European (UE) 2016/679 (GDPR), vă informăm următoarele:</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                        <div class="p-6 bg-surface-container-low rounded-2xl border border-border-light">
+                            <h4 class="font-bold text-primary mb-3 text-[18px]">Ce date colectăm?</h4>
+                            <ul class="list-disc list-inside text-body-sm text-on-surface-variant space-y-2">
+                                <li>Nume și prenume client</li>
+                                <li>Adresă de e-mail și număr de telefon</li>
+                                <li>Adresa fizică a proiectului (pentru măsurători și execuție)</li>
+                                <li>Date tehnice anonimizate colectate prin modulele cookies</li>
+                            </ul>
+                        </div>
+                        <div class="p-6 bg-surface-container-low rounded-2xl border border-border-light">
+                            <h4 class="font-bold text-primary mb-3 text-[18px]">Drepturile tale stabilite prin lege</h4>
+                            <ul class="list-disc list-inside text-body-sm text-on-surface-variant space-y-2">
+                                <li>Dreptul de acces și vizualizare a datelor stocate</li>
+                                <li>Dreptul la rectificarea sau actualizarea informațiilor</li>
+                                <li>Dreptul la ștergerea datelor („dreptul de a fi uitat”)</li>
+                                <li>Dreptul de opoziție la prelucrarea datelor în scopuri de marketing</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mt-8 mb-2">Cum utilizăm aceste date?</h3>
+                    <p>Datele transmise prin formularele de pe site sunt utilizate exclusiv pentru elaborarea ofertelor de preț personalizate, executarea contractelor de peisagistică și comunicări administrative legate de proiectul dumneavoastră.</p>
+                </div>
+            </section>
+
+            <!-- Cookies Section -->
+            <section class="glass-card rounded-[2rem] p-8 shadow-sm" id="cookies">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+                        <span class="material-symbols-outlined text-2xl">cookie</span>
+                    </div>
+                    <h2 class="font-headline-md text-on-background text-[28px]">Politica de Cookies</h2>
+                </div>
+                <div class="legal-content">
+                    <p>Website-ul Gradina X utilizează module cookie tehnice și analitice pentru a asigura o încărcare rapidă a paginilor și o experiență de navigare personalizată.</p>
+                    <div class="overflow-x-auto mt-6 rounded-2xl border border-outline-variant/30">
+                        <table class="w-full border-collapse">
+                            <thead class="bg-surface-container text-on-surface text-left">
+                                <tr>
+                                    <th class="p-4 font-bold border-b border-outline-variant">Tip Cookie</th>
+                                    <th class="p-4 font-bold border-b border-outline-variant">Scop de utilizare</th>
+                                    <th class="p-4 font-bold border-b border-outline-variant">Durată Expirare</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-body-sm bg-surface-container-lowest">
+                                <tr class="border-b border-outline-variant/20">
+                                    <td class="p-4 font-bold text-on-surface">Esențiale (Tehnice)</td>
+                                    <td class="p-4 text-on-surface-variant">Securitatea sesiunii și păstrarea layout-ului responsiv al paginii.</td>
+                                    <td class="p-4 text-on-surface-variant">Sesiune curentă</td>
+                                </tr>
+                                <tr class="border-b border-outline-variant/20">
+                                    <td class="p-4 font-bold text-on-surface">Analitice</td>
+                                    <td class="p-4 text-on-surface-variant">Monitorizarea traficului agregat și performanța vitezei (Google Analytics).</td>
+                                    <td class="p-4 text-on-surface-variant">2 ani</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4 font-bold text-on-surface">Marketing</td>
+                                    <td class="p-4 text-on-surface-variant">Afisarea de reclame relevante pe rețelele sociale pentru utilizatorii care ne vizitează.</td>
+                                    <td class="p-4 text-on-surface-variant">90 zile</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Useful Links Section (Bento Style) -->
+            <section id="linkuri-utile" class="space-y-6">
+                <div class="flex items-center gap-4 mb-4">
+                    <div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+                        <span class="material-symbols-outlined text-2xl">help</span>
+                    </div>
+                    <h2 class="font-headline-md text-on-background text-[28px]">Link-uri Utile & Protecția Consumatorului</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <a class="group flex items-start gap-6 p-8 bg-surface-container-low rounded-[2rem] border border-outline-variant/20 transition-all hover:bg-primary hover:text-on-primary hover:-translate-y-1 shadow-sm" href="https://anpc.ro/" target="_blank" rel="noopener noreferrer">
+                        <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-primary group-hover:bg-white/20 group-hover:text-white transition-colors shadow-sm shrink-0">
+                            <span class="material-symbols-outlined text-3xl">policy</span>
+                        </div>
+                        <div>
+                            <h4 class="font-headline-sm mb-2 font-bold text-[20px]">ANPC</h4>
+                            <p class="text-body-sm opacity-80">Autoritatea Națională pentru Protecția Consumatorilor. Click pentru a depune o sesizare sau pentru informații.</p>
+                            <span class="inline-flex items-center gap-2 mt-4 font-bold text-xs uppercase tracking-widest">
+                                Accesează site-ul <span class="material-symbols-outlined text-sm">open_in_new</span>
+                            </span>
+                        </div>
+                    </a>
+                    <a class="group flex items-start gap-6 p-8 bg-surface-container-low rounded-[2rem] border border-outline-variant/20 transition-all hover:bg-primary hover:text-on-primary hover:-translate-y-1 shadow-sm" href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer">
+                        <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-primary group-hover:bg-white/20 group-hover:text-white transition-colors shadow-sm shrink-0">
+                            <span class="material-symbols-outlined text-3xl">balance</span>
+                        </div>
+                        <div>
+                            <h4 class="font-headline-sm mb-2 font-bold text-[20px]">Platforma SOL</h4>
+                            <p class="text-body-sm opacity-80">Soluționarea Online a Litigiilor comerciale în mod amiabil pentru tranzacțiile derulate la nivelul UE.</p>
+                            <span class="inline-flex items-center gap-2 mt-4 font-bold text-xs uppercase tracking-widest">
+                                Accesează site-ul <span class="material-symbols-outlined text-sm">open_in_new</span>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-inverse-surface text-surface-variant w-full py-section-padding-y">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-gutter max-w-container-max mx-auto">
+        <div class="space-y-6">
+            <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-surface-bright text-3xl">park</span>
+                <div class="font-headline-md text-headline-md font-extrabold text-surface-bright">Gradina X</div>
+            </div>
+            <p class="font-body-md text-surface-variant/80">Peisagistică profesională pentru sanctuarul tău exterior. Transformăm viziunile în realitate verde.</p>
+            <div class="flex gap-4">
+                <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors duration-200" href="#">
+                    <span class="material-symbols-outlined text-white">face_nod</span>
+                </a>
+                <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors duration-200" href="#">
+                    <span class="material-symbols-outlined text-white">photo_camera</span>
+                </a>
+            </div>
+        </div>
+        <div>
+            <h4 class="text-white font-bold mb-6">Servicii</h4>
+            <ul class="space-y-4">
+                <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block" href="servicii.html#amenajare">Amenajări Grădini</a></li>
+                <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block" href="servicii.html#gazon">Instalare Gazon</a></li>
+                <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block" href="servicii.html#irigatii">Sisteme Irigații</a></li>
+                <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block" href="servicii.html#mentenanta">Întreținere</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="text-white font-bold mb-6">Informații Legale</h4>
+            <ul class="space-y-4">
+                <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block" href="portofoliu.html">Portofoliu Lucrări</a></li>
+                <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block" href="index.html#despre">Despre Noi</a></li>
+                <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block font-bold text-primary-fixed-dim" href="legal.html#termeni">Termeni și Condiții</a></li>
+                <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block" href="legal.html#gdpr">Politică GDPR</a></li>
+                <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block" href="legal.html#cookies">Politică Cookies</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="text-white font-bold mb-6">Contact direct</h4>
+            <ul class="space-y-4 font-body-md">
+                <li class="flex gap-3 items-start">
+                    <span class="material-symbols-outlined text-primary-fixed shrink-0">location_on</span>
+                    <span>București, România</span>
+                </li>
+                <li class="flex gap-3 items-start">
+                    <span class="material-symbols-outlined text-primary-fixed shrink-0">call</span>
+                    <a href="tel:+40 730 395 167" class="hover:underline transition-all duration-200">+40 730 395 167</a>
+                </li>
+                <li class="flex gap-3 items-start">
+                    <span class="material-symbols-outlined text-primary-fixed shrink-0">mail</span>
+                    <a href="mailto:contact@gradinax.ro" class="hover:underline transition-all duration-200">contact@gradinax.ro</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="max-w-container-max mx-auto px-gutter mt-16 pt-8 border-t border-white/10 text-center">
+        <p class="font-body-md text-surface-variant/60">© 2026 Gradina X. Toate drepturile rezervate. Peisagistică profesională pentru sanctuarul tău exterior.</p>
+    </div>
+</footer>
+
+<!-- Bottom Navigation Bar (Mobile) -->
+<div class="md:hidden fixed bottom-0 left-0 w-full bg-glass-bg backdrop-blur-lg border-t border-outline-variant/30 z-50 px-6 py-3 flex justify-around shadow-lg">
+    <a class="flex flex-col items-center gap-1 text-on-surface-variant" href="index.html#acasa">
+        <span class="material-symbols-outlined">home</span>
+        <span class="text-[10px] font-bold">Acasă</span>
+    </a>
+    <a class="flex flex-col items-center gap-1 text-on-surface-variant" href="servicii.html">
+        <span class="material-symbols-outlined">grid_view</span>
+        <span class="text-[10px] font-bold">Servicii</span>
+    </a>
+    <a class="flex flex-col items-center gap-1 text-primary" href="#">
+        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">description</span>
+        <span class="text-[10px] font-bold">Legal</span>
+    </a>
+    <a class="flex flex-col items-center gap-1 text-on-surface-variant" href="index.html#contact">
+        <span class="material-symbols-outlined">mail</span>
+        <span class="text-[10px] font-bold">Contact</span>
+    </a>
+</div>
+
+<script>
+    // Scrollspy dinamic pentru meniul lateral desktop
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('aside a');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (window.pageYOffset >= (sectionTop - 160)) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('bg-primary-container', 'text-on-primary-container', 'font-bold');
+            link.classList.add('text-on-surface-variant', 'hover:bg-surface-container-low');
+            if (link.getAttribute('href').includes(current)) {
+                link.classList.add('bg-primary-container', 'text-on-primary-container', 'font-bold');
+                link.classList.remove('text-on-surface-variant', 'hover:bg-surface-container-low');
+            }
+        });
+    });
+
+    // Efect vizual discret la trecerea mouse-ului peste cardurile legale
+    document.querySelectorAll('.glass-card').forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            card.classList.add('shadow-md', 'border-primary/20');
+        });
+        card.addEventListener('mouseleave', () => {
+            card.classList.remove('shadow-md', 'border-primary/20');
+        });
+    });
+</script>
+</body>
+</html>
