@@ -98,15 +98,15 @@
     </script>
     <style>
         /* ==========================================================================
-           IMAGINI PORTOFOLIU - SCHIMBĂ LINKURILE DE MAI JOS CU POZELE TALE (ex: 'lucrare1.jpg')
+           IMAGINI PORTOFOLIU (Aflate direct în folderul root)
            ========================================================================== */
         :root {
-            --img-proiect-1: '1.png'; /* Rezidențial Timpuri Noi */
-            --img-proiect-2: '2.png'; /* Familie Corbeanca */
-            --img-proiect-3: '3.png' ; /* Nusco Homes */
-            --img-proiect-4: '4.png'; /* Servicii */
-            --img-proiect-5: '5.png'; /* Design Interior */
-            --img-proiect-6: '6.jpeg'; /* Sisteme de Irigații și Gazon */
+            --img-proiect-1: url('1.PNG'); /* Rezidențial Timpuri Noi */
+            --img-proiect-2: url('2.PNG'); /* Familie Corbeanca */
+            --img-proiect-3: url('3.PNG'); /* Nusco Homes */
+            --img-proiect-4: url('4.PNG'); /* Servicii */
+            --img-proiect-5: url('5.PNG'); /* Design Interior */
+            --img-proiect-6: url('6.JPEG'); /* Sisteme de Irigații și Gazon */
         }
 
         .material-symbols-outlined {
@@ -127,11 +127,11 @@
         <div class="hidden md:flex gap-8 items-center">
             <a class="text-on-surface-variant hover:text-primary font-headline-sm text-[16px] transition-all duration-300 hover:scale-105" href="index.html#acasa">Acasă</a>
             <a class="text-on-surface-variant hover:text-primary font-headline-sm text-[16px] transition-all duration-300 hover:scale-105" href="index.html#despre">Despre Noi</a>
-            <a class="text-on-surface-variant hover:text-primary font-headline-sm text-[16px] transition-all duration-300 hover:scale-105" href="index.html#servicii">Servicii</a>
+            <a class="text-on-surface-variant hover:text-primary font-headline-sm text-[16px] transition-all duration-300 hover:scale-105" href="servicii.html">Servicii</a>
             <a class="text-primary font-bold border-b-2 border-primary font-headline-sm text-[16px] transition-all duration-300" href="#">Portofoliu</a>
-            <a class="text-on-surface-variant hover:text-primary font-headline-sm text-[16px] transition-all duration-300 hover:scale-105" href="index.html#contact">Contact</a>
+            <a class="text-on-surface-variant hover:text-primary font-headline-sm text-[16px] transition-all duration-300 hover:scale-105" href="contact.html">Contact</a>
         </div>
-        <a href="index.html#contact" class="bg-primary text-on-primary px-6 py-3 rounded-full font-label-bold transition-all duration-300 hover:scale-105 active:scale-95 shadow-md inline-block text-center">
+        <a href="contact.html" class="bg-primary text-on-primary px-6 py-3 rounded-full font-label-bold transition-all duration-300 hover:scale-105 active:scale-95 shadow-md inline-block text-center">
             Solicită Ofertă
         </a>
     </div>
@@ -149,57 +149,63 @@
     <div class="max-w-container-max mx-auto px-gutter">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
+            <!-- Proiect 1 -->
             <div class="group relative rounded-[2rem] overflow-hidden aspect-[4/5] shadow-lg bg-cover bg-center" style="background-image: var(--img-proiect-1)">
                 <div class="absolute inset-0 project-card-gradient opacity-80 group-hover:opacity-95 transition-opacity duration-300"></div>
                 <div class="absolute bottom-0 left-0 p-8 w-full transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
                     <span class="text-primary-fixed bg-primary/30 px-3 py-1 rounded-full text-xs font-label-bold uppercase tracking-wider mb-2 inline-block">Rezidențial</span>
-                    <h3 class="text-white font-headline-sm text-[22px] mb-1">Vila Modernă Pipera</h3>
-                    <p class="text-white/70 text-sm">Design minimalist adaptat cu elemente geometrice de apă și jardiniere elegante.</p>
+                    <h3 class="text-white font-headline-sm text-[22px] mb-1">Rezidențial Timpuri Noi</h3>
+                    <p class="text-white/70 text-sm">Amenajare peisagistică urbană modernă adaptată spațiilor rezidențiale.</p>
                 </div>
             </div>
 
+            <!-- Proiect 2 -->
             <div class="group relative rounded-[2rem] overflow-hidden aspect-[4/5] shadow-lg bg-cover bg-center" style="background-image: var(--img-proiect-2)">
                 <div class="absolute inset-0 project-card-gradient opacity-80 group-hover:opacity-95 transition-opacity duration-300"></div>
                 <div class="absolute bottom-0 left-0 p-8 w-full transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
                     <span class="text-primary-fixed bg-primary/30 px-3 py-1 rounded-full text-xs font-label-bold uppercase tracking-wider mb-2 inline-block">Grădini de Familie</span>
-                    <h3 class="text-white font-headline-sm text-[22px] mb-1">Grădină Rezidențială Snagov</h3>
-                    <p class="text-white/70 text-sm">Spațiu extins cu pergole din lemn, alei din piatră naturală și zone de recreere.</p>
+                    <h3 class="text-white font-headline-sm text-[22px] mb-1">Familie Corbeanca</h3>
+                    <p class="text-white/70 text-sm">Spațiu extins cu gazon premium, alei din piatră naturală și zone de recreere.</p>
                 </div>
             </div>
 
+            <!-- Proiect 3 -->
             <div class="group relative rounded-[2rem] overflow-hidden aspect-[4/5] shadow-lg bg-cover bg-center" style="background-image: var(--img-proiect-3)">
                 <div class="absolute inset-0 project-card-gradient opacity-80 group-hover:opacity-95 transition-opacity duration-300"></div>
                 <div class="absolute bottom-0 left-0 p-8 w-full transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                    <span class="text-primary-fixed bg-primary/30 px-3 py-1 rounded-full text-xs font-label-bold uppercase tracking-wider mb-2 inline-block">Terase de Lux</span>
-                    <h3 class="text-white font-headline-sm text-[22px] mb-1">Terasă Mediteraneeană</h3>
-                    <p class="text-white/70 text-sm">Grădină urbană senzorială cu plante aromatice rezistente, lavandă și măslini decorativi.</p>
+                    <span class="text-primary-fixed bg-primary/30 px-3 py-1 rounded-full text-xs font-label-bold uppercase tracking-wider mb-2 inline-block">Ansamblu Rezidențial</span>
+                    <h3 class="text-white font-headline-sm text-[22px] mb-1">Nusco Homes</h3>
+                    <p class="text-white/70 text-sm">Concept peisagistic integrat pentru un ansamblu de locuințe de lux.</p>
                 </div>
             </div>
 
+            <!-- Proiect 4 -->
             <div class="group relative rounded-[2rem] overflow-hidden aspect-[4/5] shadow-lg bg-cover bg-center" style="background-image: var(--img-proiect-4)">
                 <div class="absolute inset-0 project-card-gradient opacity-80 group-hover:opacity-95 transition-opacity duration-300"></div>
                 <div class="absolute bottom-0 left-0 p-8 w-full transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                    <span class="text-primary-fixed bg-primary/30 px-3 py-1 rounded-full text-xs font-label-bold uppercase tracking-wider mb-2 inline-block">Design Modern</span>
-                    <h3 class="text-white font-headline-sm text-[22px] mb-1">Sanctuar Zen Urban</h3>
-                    <p class="text-white/70 text-sm">Linii drepte, gazon impecabil și iluminat nocturn inteligent integrat arhitectural.</p>
+                    <span class="text-primary-fixed bg-primary/30 px-3 py-1 rounded-full text-xs font-label-bold uppercase tracking-wider mb-2 inline-block">Servicii</span>
+                    <h3 class="text-white font-headline-sm text-[22px] mb-1">Servicii Complete de Amenajare</h3>
+                    <p class="text-white/70 text-sm">Execuție completă de lucrări peisagistice, de la nivelare până la montaj.</p>
                 </div>
             </div>
 
+            <!-- Proiect 5 -->
             <div class="group relative rounded-[2rem] overflow-hidden aspect-[4/5] shadow-lg bg-cover bg-center" style="background-image: var(--img-proiect-5)">
                 <div class="absolute inset-0 project-card-gradient opacity-80 group-hover:opacity-95 transition-opacity duration-300"></div>
                 <div class="absolute bottom-0 left-0 p-8 w-full transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                    <span class="text-primary-fixed bg-primary/30 px-3 py-1 rounded-full text-xs font-label-bold uppercase tracking-wider mb-2 inline-block">Corporate / Comercial</span>
-                    <h3 class="text-white font-headline-sm text-[22px] mb-1">Sediu Clădire Birouri</h3>
-                    <p class="text-white/70 text-sm">Amenajare spațiu verde exterior pentru relaxarea angajaților cu plante perene ușor de întreținut.</p>
+                    <span class="text-primary-fixed bg-primary/30 px-3 py-1 rounded-full text-xs font-label-bold uppercase tracking-wider mb-2 inline-block">Design & Terase</span>
+                    <h3 class="text-white font-headline-sm text-[22px] mb-1">Design Interior și Exterior</h3>
+                    <p class="text-white/70 text-sm">Armonizarea spațiului verde cu elementele arhitecturale ale casei.</p>
                 </div>
             </div>
 
+            <!-- Proiect 6 -->
             <div class="group relative rounded-[2rem] overflow-hidden aspect-[4/5] shadow-lg bg-cover bg-center" style="background-image: var(--img-proiect-6)">
                 <div class="absolute inset-0 project-card-gradient opacity-80 group-hover:opacity-95 transition-opacity duration-300"></div>
                 <div class="absolute bottom-0 left-0 p-8 w-full transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
                     <span class="text-primary-fixed bg-primary/30 px-3 py-1 rounded-full text-xs font-label-bold uppercase tracking-wider mb-2 inline-block">Tehnic & Sisteme</span>
-                    <h3 class="text-white font-headline-sm text-[22px] mb-1">Gazonare și Irigații Automate</h3>
-                    <p class="text-white/70 text-sm">Montaj rulou gazon premium completat cu un sistem de irigație programabil prin Wi-Fi.</p>
+                    <h3 class="text-white font-headline-sm text-[22px] mb-1">Sisteme de Irigații și Gazon</h3>
+                    <p class="text-white/70 text-sm">Montaj rulou gazon premium completat cu un sistem de irigație automatizat.</p>
                 </div>
             </div>
 
@@ -211,7 +217,7 @@
     <div class="max-w-container-max mx-auto px-gutter text-center">
         <h2 class="font-headline-lg text-primary mb-4">Vrei o transformare similară pentru curtea ta?</h2>
         <p class="font-body-md text-on-surface-variant max-w-xl mx-auto mb-8">Echipa noastră oferă servicii de consultanță și proiectare 3D pentru ca tu să îți poți vizualiza spațiul înainte de execuție.</p>
-        <a href="index.html#contact" class="bg-primary text-on-primary px-8 py-4 rounded-full font-headline-sm transition-all duration-300 hover:scale-105 inline-flex items-center gap-2 shadow-lg">
+        <a href="contact.html" class="bg-primary text-on-primary px-8 py-4 rounded-full font-headline-sm transition-all duration-300 hover:scale-105 inline-flex items-center gap-2 shadow-lg">
             Solicită o Propunere de Design
             <span class="material-symbols-outlined">edit_calendar</span>
         </a>
@@ -247,7 +253,7 @@
         <div>
             <h4 class="text-white font-bold mb-6">Informații Legale</h4>
             <ul class="space-y-4">
-                <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block" href="portofoliu.html">Portofoliu Lucrări</a></li>
+                <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block" href="#">Portofoliu Lucrări</a></li>
                 <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block" href="index.html#despre">Despre Noi</a></li>
                 <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block font-bold text-primary-fixed-dim" href="legal.html#termeni">Termeni și Condiții</a></li>
                 <li><a class="hover:text-primary-fixed-dim transition-colors duration-200 block" href="legal.html#gdpr">Politică GDPR</a></li>
@@ -263,7 +269,7 @@
                 </li>
                 <li class="flex gap-3 items-start">
                     <span class="material-symbols-outlined text-primary-fixed shrink-0">call</span>
-                    <a href="tel:+40 730 395 167" class="hover:underline transition-all duration-200">+40 730 395 167</a>
+                    <a href="tel:+40730395167" class="hover:underline transition-all duration-200">+40 730 395 167</a>
                 </li>
                 <li class="flex gap-3 items-start">
                     <span class="material-symbols-outlined text-primary-fixed shrink-0">mail</span>
